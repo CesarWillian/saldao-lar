@@ -201,7 +201,7 @@ function NewsletterCreateWDM(storeName, firstName, email)
 					"isNewsletterOptIn": true
 					};
 
-	var url = "http://api.vtexcrm.com.br/" + storeName + "/dataentities/CL/documents/";
+	var url = "https://api.vtexcrm.com.br/" + storeName + "/dataentities/CL/documents/";
 
 	$.ajax({
 		headers: {
@@ -234,7 +234,7 @@ function NewsletterUpdateWDM(storeName, email)
 					"isNewsletterOptIn": true
 					};
 
-	var url = "http://api.vtexcrm.com.br/" + storeName + "/dataentities/CL/documents/";
+	var url = "https://api.vtexcrm.com.br/" + storeName + "/dataentities/CL/documents/";
 
 	$.ajax({
 		headers: {
@@ -262,7 +262,7 @@ function NewsletterUpdateWDM(storeName, email)
 
 function NewsletterVerifyWDM(storeName, nome, email)
 {
-	var url = "http://api.vtexcrm.com.br/" + storeName + "/dataentities/CL/search/?email=" + email + "&_fields=email";
+	var url = "https://api.vtexcrm.com.br/" + storeName + "/dataentities/CL/search/?email=" + email + "&_fields=email";
 	
 	$.ajax({
 		headers: {
